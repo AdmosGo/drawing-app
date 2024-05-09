@@ -8,19 +8,30 @@ body {
     background-color: #4a98f7;
 }
 
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: min-content 1fr min-content;
+}
+
  /* background: white; */
  /* background: #ffffff; */
+ /* white = #ffffff*/
 
 header {
     background: #ffffff;
-    padding: 50px;
-    text-align: center;
 }
 
  /* background: black; */
+ /* background: #000000; */
+
 
 footer {
+    background: black;
+    color: #ffffff;
+}
 
-background: black;
-color: #ffffff;
+header, footer{
+    padding: 50px;
+    text-align: center;
 }
