@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drawing App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -22,10 +23,13 @@
     <!-- Ⓒ = &#9400; -->
 
     <footer>
-        Copyright &#9400; 2024 - Adam, Drawing App - All Rights Reserved.
+        Copyright &#9400; <script>
+            const year = new Date().getFullYear();
+            document.write(year.toString());
+        </script> - Adam, Drawing App - All Rights Reserved.
     </footer>
 </div>
-<script src="script.js"></script>
+
 </body>
 
 </html>
