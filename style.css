@@ -6,6 +6,14 @@
   body {
     background: #4a98f7;
   }
+
+  .splash {
+    /* margin: -96px 0 0 -96px; */
+    margin: calc(-192px / 2) 0 0 calc(-192px / 2);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+  }
   
   .container {
     display: grid;
