@@ -6,7 +6,7 @@
     <title>Drawing App</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -23,9 +23,29 @@
 
     <main class="main">
         <!-- Main Content -->
-        <section class="tools-board">1</section>
+        <section class="tools-board">
+            <div class="row" >
+            <label>Shapes</label>
+            <ul>
+                <li>Rectangle</li>
+                <li>Circle</li>
+                <li>Triangle</li>
+                <li>Fill color</li>            
+            </ul>
+            </div>
+
+            <div class="row" >
+                <label>Options</label>
+                <ul>
+                    <li>Brush</li>
+                    <li>Eraser</li>   
+                    <li></li>         
+                </ul>
+                </div>
+
+        </section>
         <section class="drawing-board">
-            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000"></canvas>
+            <canvas></canvas>
         </section>
     </main>
 
@@ -39,7 +59,7 @@
         </script> - Adam, Drawing App - All Rights Reserved.
     </footer>
 </div>
-<script src="splash.js"></script>
+
 </body>
 
 </html>

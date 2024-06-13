@@ -93,6 +93,10 @@ width: 210px;
 overflow: hidden;
 }
 
+.drawing-board {
+  width: 850px;
+}
+
 .drawing-board canvas {
   width: 100%;
   height:100%;
