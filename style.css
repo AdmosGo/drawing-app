@@ -90,11 +90,12 @@ section {
 
 .tools-board {
 width: 210px;
-overflow: hidden;
+padding: 15px 22px 0 22px;
 }
 
 .drawing-board {
   width: 850px;
+  overflow: hidden;
 }
 
 .drawing-board canvas {
