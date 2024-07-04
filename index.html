@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drawing App</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawing App</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class="splash">
-        <img src="splash.png" alt="splash screen">
-        <p><b>Welcome to my drawing app!</b></p>
-    </div>
-   <div class="container">   
+  <div class="splash">
+    <img src="splash.png" alt="splash screen">
+    <p><b>Welcome to my drawing app!</b></p>
+  </div>
+
+  <div class="container">
     <header>
-        <h1>Drawing App</h1>
-        <p style="padding-top: 5px; font-size: 20px;">My name is <a href="https://t.me/+group-name" target="_blank" 
-            title="Go to Adam's group on Telegram"><i><B>Adam</B></i></a> </p>
+      <h1>Drawing App</h1>
+      <p style="padding-top: 5px; font-size: 20px">My name is <a href="https://t.me/+group-name" target="_blank"
+          title="Go to Adam's group on Telegram"><i><b>Adam</b></i></a></p>
     </header>
 
     <main class="main">
-        <!-- Main Content -->
-        <section class="tools-board">
-            <div class="row" >
-            <label>Shapes</label>
-            <ul class="options">
-                <li class="option tool" id="rectangle">
-                    <img src="icons/rectangle.svg" alt="rectangle">
-                    <span>Rectangle</span>
-                </li>
-                <li class="option tool" id="circle">
-                    <img src="icons/circle.svg" alt="circle">
-                    <span>Circle</span>
-                </li>
-                <li class="option tool" id="triangle">
-                    <img src="icons/triangle.svg" alt="triangle">
-                    <span>Triangle</span>
-                </li>
-                <li class="option">
-                    <input type="checkbox" name="fill-color" id="fill-color">
-                    <label for="fill-color">Fill color</label>
-                </li>            
-            </ul>
-            </div>
+      <section class="tools-board">
+        <div class="row">
+          <label>Shapes</label>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img src="icons/rectangle.svg" alt="rectangle">
+              <span>Rectangle</span>
+            </li>
+            <li class="option tool" id="circle">
+              <img src="icons/circle.svg" alt="circle">
+              <span>Circle</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <img src="icons/triangle.svg" alt="triangle">
+              <span>Triangle</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" name="fill-color" id="fill-color">
+              <label for="fill-color">Fill color</label>
+            </li>
+          </ul>
+        </div>
 
-            <div class="row" >
-                <label>Options</label>
-                <ul class="options">
-                    <li class="option">
-                        <img src="icons/brush.svg" alt="brush">
-                        <span>Brush</span>
-                    </li>
-                    <li class="option">  <img src="icons/eraser.svg" alt="eraser">
-                        <span>Eraser</span>
-                    </li>   
-                    <li class="option">
-                        <input type="range" min="1" max="30" value="5" id="size-slider">
-                    </li>         
-                </ul>
-                </div>
+        <div class="row">
+          <label>Options</label>
+          <ul class="options">
+            <li class="option">
+              <img src="icons/brush.svg" alt="brush">
+              <span>Brush</span>
+            </li>
+            <li class="option">
+              <img src="icons/eraser.svg" alt="eraser">
+              <span>Eraser</span>
+            </li>
+            <li class="option">
+              <input type="range" min="1" max="30" value="5" id="size-slider">
+            </li>
+          </ul>
+        </div>
 
-                <div class="row">
-                    <label>Colors</label>
-                    <ul class="options">
-                        <li class="option">White</li>
-                        <li class="option">Black</li>
-                        <li class="option">Red</li>
-                        <li class="option">Green</li>
-                        <li class="option">Blue</li>
-                    </ul>
-                </div>
+        <div class="row" colors>
+          <label>Colors</label>
+          <ol class="options">
+            <li class="option">White</li>
+            <li class="option">Black</li>
+            <li class="option">Red</li>
+            <li class="option">Green</li>
+            <li class="option">
+                <input type="color" id="color-picker" value="#4a98f7">
+            </li>
+          </ol>
+        </div>
 
-                <div class="row">
-                    <button>Clear Canvas</button>
-                    <button>Save As Image</button>
-                </div>
+        <div class="row">
+          <button>Clear Canvas</button>
+          <button>Save As Image</button>
+        </div>
+      </section>
 
-        </section>
-        <section class="drawing-board">
-            <canvas></canvas>
-        </section>
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
     </main>
 
-    <!-- © = &copy; -->
+    <!-- © = &copy;  -->
     <!-- Ⓒ = &#9400; -->
-
     <footer>
-        Copyright &#9400; <script>
-            const year = new Date().getFullYear();
-            document.write(year.toString());
-        </script> - Adam, Drawing App - All Rights Reserved.
+      Copyright &#9400;
+      <script>
+        const year = new Date().getFullYear();
+        document.write(year.toString());
+      </script> - Adam, Drawing App - All Rights Reserved.
     </footer>
-</div>
-
+  </div>
 </body>
 
 </html>

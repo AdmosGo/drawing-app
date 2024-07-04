@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  color:#000;
+  color: #000;
 }
 
 a:hover {
@@ -32,7 +32,7 @@ a:hover {
   text-align: center;
   font-size: 18px;
   color: #1d0033;
-  border-radius: 0% 40% 0% 10% ;
+  border-radius: 0% 40% 0% 10%;
 }
 
 .splash.display-none {
@@ -44,14 +44,13 @@ a:hover {
   transition: all 10s;
 }
 
-.splash img{
+.splash img {
   border-radius: 10px 100px / 120px;
 }
 
 .splash p {
   padding-top: 10px;
 }
-
 
 @keyframs fadeIn {
   to {
@@ -69,7 +68,7 @@ header {
   padding: 20px;
   background: #ffffff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 main {
@@ -89,8 +88,56 @@ section {
 }
 
 .tools-board {
-width: 210px;
-padding: 15px 22px 0 22px;
+  width: 210px;
+  padding: 15px 22px 0;
+}
+
+.tools-board .row {
+  margin-bottom: 20px;
+}
+
+.tools-board .row .options {
+  list-style: none;
+  margin: 10px 5px 0 5px;
+}
+
+.row .options .option {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.option:is(:hover, .active) img {
+  filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg)
+    brightness(100%) contrast(100%);
+}
+
+.options :where(span, label) {
+  color: #5a6168;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.option:is(:hover, .active) :where(span, label) {
+  color: #4a98f7;
+}
+
+.option #fill-color {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+}
+
+#fill-color:checked ~ label {
+  color: #4a98f7;
+}
+
+.option #size-slider {
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
 }
 
 .drawing-board {
@@ -98,27 +145,9 @@ padding: 15px 22px 0 22px;
   overflow: hidden;
 }
 
-.tools-board .row {
-  margin-bottom: 20px;
-
-  margin: 0 0 20px 0;
-}
-
-.tools-board .row .options {
-  list-style: none;
-  margin: 10px 5px 5px;
-}
-
-.row .options .option{
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  margin-bottom: 10px;
-}
-
 .drawing-board canvas {
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 
 footer {
