@@ -145,6 +145,60 @@ section {
   justify-content: space-between;
 }
 
+.colors .option:nth-child(1) {
+  background-color: #ffffff;
+  border: 1px solid #bfbfbfbf;
+}
+
+.colors .option:nth-child(2) {
+  background-color: #000;
+  border: 1px solid #bfbfbfbf;
+}
+
+.colors .option:nth-child(3) {
+  background-color: #e02020;
+  border: 1px solid #bfbfbfbf;
+}
+
+.colors .option:nth-child(4) {
+  background-color: #6dd400;
+  border: 1px solid #bfbfbfbf;
+}
+
+.colors .option:nth-child(5) {
+  background-color: #4a98f7;
+  border: 1px solid #bfbfbfbf;
+}
+
+.colors .option.selected::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  background: inherit;
+  border-radius: inherit;
+  transform: translate(-50%, -50%);
+}
+
+.colors .option:first-child.option.selected::before {
+  border-color: #ccc;
+}
+
+.option #color-picker {
+  opacity: 0;
+}
+
+.colors .option {
+  position: relative;
+  margin-top: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
 label, button {
   font-size: 18px;
 }
